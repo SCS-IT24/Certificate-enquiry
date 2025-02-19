@@ -1,0 +1,25 @@
+.font-sora{
+    font-family: "Sora", serif;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.banner img{
+    width: 50%;
+}
+form label{
+    display: block;
+    margin-bottom: 20px;
+}
+.text-area{
+    text-align: center;
+    margin-top: 24px;
+}
+footer{
+    text-align: center;
+}
