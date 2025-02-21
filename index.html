@@ -3,78 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTCL : Certificate Enquiry</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo-1_512x512.png"> 
-    <!-- For .ico file -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
-    <!-- Add Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <!-- Fontawesome CDN -->
-    <script src="https://kit.fontawesome.com/0b542f82b5.js" crossorigin="anonymous"></script>
+    <title> NTCL : Certificate Enquiry </title>
+    <link rel="shortcut icon" href="images/logo-1_256x256.png" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+
+            
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        label {
+            
+            font-weight: bold;
+            
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .label-1{
+            display: flex;
+            align-items: center;
+            
+        }
+        a {
+            color: rgb(0, 26, 255);
+            text-decoration: none;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(233, 231, 231, 0.966);
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .status {
+            background-color: green;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            /* text-align: center; */
+        }
+        .status-1{
+            color: rgb(0, 26, 255);
+        }
+        img {
+        display: block;
+        margin: auto;
+        }
+        h2{
+            text-align: center;
+        }
+        .footer-cpg{
+         font-weight: 900;   
+         
+         
+        }
+        .footer{
+            text-align: center;
+        }
+        
+    </style>
 </head>
 <body>
-    <header class="">
-        <div class="banner ">
-            <img  src="./images/logo-1_256x256.png" alt="">
+    <section class="">
+        <div class="container">
+            <img class="title-img" src="./images/logo-1_256x256.png" alt="">
+            <h2>National Testing Calibration & Inspection Ltd.</h2>
+            <label>Enter File Number:</label>
+            <div class="label-1">
+            <input class="status-1" type="text" value="QAC/R880/0067" >
+            <a href="">search</a>
+            </div>
+            <label>Client:</label>
+            <input type="text" value="Bangladesh Building Systems PLC." disabled>
+            
+            <label>Certificate File Number:</label>
+            <input class="status" type="text" value="QMS/15/R880/0067" disabled>
+            
+            <label>Status:</label>
+            <input class="status" type="text" value="Registered/Certified" disabled>
+            <label>Sites:</label>
+            <textarea disabled>Jaina Bazar,Telihati, 
+Sripur, Gazipur, 
+BANGLADESH
+1740</textarea>
+            
+            <label>Scope:</label>
+            <textarea disabled>Fabrication, forming, supply, erection & after sales service of pre-engineered steel structure.</textarea>
+            
+            <label>File Number:</label>
+            <input type="text" value="QMS/15/R880/0067" disabled>
+            
+            <label>Accreditation:</label>
+            <input type="text" value="JAS-ANZ" disabled>
+            
+            <label>Certification Standard:</label>
+            <input type="text" value="ISO 9001 2015" disabled>
+            
+            <label>Certification Date:</label>
+            <input type="text" value="18/May/2018" disabled>
+            
+            <label>Expiry Date:</label>
+            <input type="text" value="18/May/2027" disabled>
+            
+            <label>NACE Codes:</label>
+            <input type="text" value="28.1, 28.1" disabled>
         </div>
-    </header>
-    <main class="">
-        <section class="text-area">
-            <form>
-                <label for="File-name">Enter File Number
-                    <input type="text" placeholder="Enter File Number">
-                    <span><a href="">Search</a></span>
-                </label>
-                <label for="Client-name">Client
-                    <button>Bangladesh Building Systems PLC.</button>
-                </label>  
-                <label for="Certificate File-name">Certificate File Number
-                    <button>QMS/15/R880/0067</button>
-                </label>  
-                <label for="Registered-name">Status
-                    <button>Registered/Certified</button>
-                </label>  
-                <label for="Sites-name">Sites
-                    <textarea name="" id="" rows="10">Jaina Bazar,Telehati, 
-                        Sripur, Gazipur  
-                        BANGLADESH
-                        1740</textarea>
-                </label>  
-                <label for="Scope-name">Scope
-                    <textarea name="" id="" rows="5">Fabrication,forming,supply, erection & after sales service of pre-engineered steel structure</textarea>
-                </label> 
-                <label for="Registered-name">File Number
-                    <button>QMS/15/R880/0067</button>
-                </label> 
-                <label for="Registered-name">Accreditation
-                    <button>JAS-ANZ</button>
-                </label> 
-                <label for="Registered-name">Certification Standard
-                    <button>ISO 9001 2015</button>
-                </label> 
-                <label for="Registered-name">Certification Date
-                    <button>18/May/2018</button>
-                </label> 
-                <label for="Registered-name">Expiry Date
-                    <button>18/May/2027</button>
-                </label> 
-                <label for="Registered-name">NACE Codes
-                    <button>28.1, 28.1</button>
-                </label> 
-                  
-            </form>
-        </section>
-    
-    </main>
-    <footer>
-        <p><span>CPG Fujairah (previously known as ISC Global), Level 14, Boulevard Plaza, Tower 1 Downtown, Dubai U.A.E.</span> <br>This Status and Validity of this Certificate maybe verified in real time by scanning the adjacent QR Code image.
-            This certificate is valid until the Expiry Date shown on the condition that audits are conducted each year and paid for as per the Certification Agreement.
-            Should this condition not be met, cancellation procedures will be initiated and the cancellation status will be revealed when the QR Code is scanned.
-            This Certificate remains the property of the Certificate Issuer and must be returned upon request. It must not be altered in any way. Intentional misuse of this certificate will result in cancellation without prior notification.</p>
-    </footer>
+        <div class="footer container">
+            <p><span class="footer-cpg">CPG Fujairah (previously known as ISC Global), Level 14, Boulevard Plaza, Tower 1 Downtown, Dubai U.A.E.</span> <br>
+                This Status and Validity of this Certificate maybe verified in real time by scanning the adjacent QR Code image.
+                This certificate is valid until the Expiry Date shown on the condition that audits are conducted each year and paid for as per the Certification Agreement.
+                Should this condition not be met, cancellation procedures will be initiated and the cancellation status will be revealed when the QR Code is scanned.
+                This Certificate remains the property of the Certificate Issuer and must be returned upon request. It must not be altered in any way. Intentional misuse of this certificate will result in cancellation without prior notification.</p>
+        </div>
+    </section>
     
 </body>
 </html>
